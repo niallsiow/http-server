@@ -28,7 +28,7 @@ s = socket.socket()
 
 s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
-s.bind(('', port))
+s.bind(('0.0.0.0', port))
 
 s.listen()
 
